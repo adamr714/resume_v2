@@ -1,12 +1,13 @@
 body {
 	background-color: slategray;
+	font-family: 'Roboto', sans-serif;
 }
 
 
 main {
 	display: block;
 	position: relative;
-	width: 700px;
+	width: 800px;
 	height: 1000px;
 	margin-top: 2em;
 	margin-left: auto;
@@ -63,7 +64,7 @@ main {
 .rhex {
   position: relative;
   margin: 1em auto;
-  width: 4em; height: 6.5em;
+  width: 6em; height: 9.8em;
   border-radius: .8em/ .5em;
   opacity: .5;
   background: green;
@@ -74,7 +75,8 @@ main {
 
 .rhex:before, .rhex:after {
   position: absolute;
-  width: inherit; height: inherit;
+  width: inherit; 
+  height: inherit;
   border-radius: inherit;
   background: inherit;
   content: '';
@@ -89,6 +91,39 @@ main {
 
 .rhex:hover {
   opacity: 1;
+}
+
+.name {
+  	margin: -4em auto;
+  	transition: opacity .5s;
+ 	border-radius: 1em/ .5em;
+	text-align: center;
+	color: white;
+	font-family: 'Yellowtail', cursive;
+	font-size: 26pt;
+	text-shadow: 2px 2px #000;
+	transform: rotate(-10deg);
+}
+
+.about {
+	width: 90%;
+	text-align: center;
+	margin-left: auto;
+	margin: 14em auto;
+	font-size: 11pt;
+}
+
+
+.about ul li {
+	display: inline-block;
+	padding: 0px 10px;
+
+}
+
+
+.about ul li::after {
+	content: '*';
+	padding-left: 20px;
 }
 
 
