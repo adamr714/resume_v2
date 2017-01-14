@@ -1,0 +1,94 @@
+body {
+	background-color: slategray;
+}
+
+
+main {
+	display: block;
+	position: relative;
+	width: 700px;
+	height: 1000px;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: beige;
+	border: 1px solid #000;
+	box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.4);
+}
+
+.triangle_top_left {
+	width: 0;
+	height: 0;
+	border-top: 100px solid darkslategray;
+	border-right: 100px solid transparent;
+/*	float: left;*/
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.triangle_top_right {
+	width: 0;
+	height: 0;
+	border-top: 100px solid darkslategray;
+	border-left: 100px solid transparent;
+	float: right;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.triangle_bottom_left {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid darkslategray;
+	border-right: 100px solid transparent;
+	float: left;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+.triangle_bottom_right {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid darkslategray;
+	border-left: 100px solid transparent;
+	float: right;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+.rhex {
+  position: relative;
+  margin: 1em auto;
+  width: 4em; height: 6.5em;
+  border-radius: .8em/ .5em;
+  opacity: .5;
+  background: green;
+  transition: opacity .5s;
+  cursor: pointer;
+	transform: rotate(90deg);
+}
+
+.rhex:before, .rhex:after {
+  position: absolute;
+  width: inherit; height: inherit;
+  border-radius: inherit;
+  background: inherit;
+  content: '';
+}
+.rhex:before {
+  transform: rotate(60deg);
+}
+
+.rhex:after {
+  transform: rotate(-60deg);
+}
+
+.rhex:hover {
+  opacity: 1;
+}
+
+
