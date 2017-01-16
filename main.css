@@ -1,20 +1,40 @@
+html, body {
+	height:100%}
+
+
 body {
 	background-color: slategray;
 	font-family: 'Roboto', sans-serif;
 }
 
+h2 {
+	border-bottom: 1px solid darkslategray;
+	color: darkslategray;
+}
+
+.name {
+  	margin: -3.6em auto;
+	text-align: center;
+	color: white;
+	font-family: 'Yellowtail', cursive;
+	font-size: 26pt;
+	line-height: 95%;
+	text-shadow: 2px 2px #000;
+	transform: rotate(-10deg);
+}
 
 main {
 	display: block;
 	position: relative;
-	width: 800px;
-	height: 1000px;
+	width: 80%;
+	height: 100%;
 	margin-top: 2em;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: beige;
 	border: 1px solid #000;
 	box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.4);
+	min-height: 20em;
 }
 
 .triangle_top_left {
@@ -24,8 +44,8 @@ main {
 	border-right: 100px solid transparent;
 /*	float: left;*/
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 1em;
+	left: 1em;
 }
 
 .triangle_top_right {
@@ -35,8 +55,8 @@ main {
 	border-left: 100px solid transparent;
 	float: right;
 	position: absolute;
-	top: 0px;
-	right: 0px;
+	top: 1em;
+	right: 1em;
 }
 
 .triangle_bottom_left {
@@ -46,8 +66,8 @@ main {
 	border-right: 100px solid transparent;
 	float: left;
 	position: absolute;
-	bottom: 0px;
-	left: 0px;
+	bottom: 1em;
+	left: 1em;
 }
 
 .triangle_bottom_right {
@@ -57,8 +77,8 @@ main {
 	border-left: 100px solid transparent;
 	float: right;
 	position: absolute;
-	bottom: 0px;
-	right: 0px;
+	bottom: 1em;
+	right: 1em;
 }
 
 .rhex {
@@ -66,9 +86,8 @@ main {
   margin: 1em auto;
   width: 6em; height: 9.8em;
   border-radius: .8em/ .5em;
-  opacity: .5;
-  background: green;
-  transition: opacity .5s;
+  background: darkslategray;
+  transition: opacity .75s;
   cursor: pointer;
 	transform: rotate(90deg);
 }
@@ -91,33 +110,27 @@ main {
 
 .rhex:hover {
   opacity: 1;
+  background: green;
+    transform: rotate(-60deg);
 }
 
-.name {
-  	margin: -4em auto;
-  	transition: opacity .5s;
- 	border-radius: 1em/ .5em;
-	text-align: center;
-	color: white;
-	font-family: 'Yellowtail', cursive;
-	font-size: 26pt;
-	text-shadow: 2px 2px #000;
-	transform: rotate(-10deg);
-}
 
 .about {
 	width: 90%;
 	text-align: center;
+	margin-top: 14em;
 	margin-left: auto;
-	margin: 14em auto;
+	margin-right: auto;
 	font-size: 11pt;
 }
 
+ul {
+	padding: 0px;
+}
 
 .about ul li {
 	display: inline-block;
 	padding: 0px 10px;
-
 }
 
 
@@ -125,5 +138,119 @@ main {
 	content: '*';
 	padding-left: 20px;
 }
+
+.about ul li:last-child::after { 
+	content:''; 
+}
+
+
+.experience_education {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 11pt;
+	height: 4em;
+
+}
+
+.experience {
+	float: left;
+	width: 48%;
+	min-height: 20em;
+	border-bottom:  1px solid darkslategray;
+}
+
+.spacer {
+	float: left;
+	border-left: 1px solid darkslategray;
+	min-height: 20em;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.education {
+	float: left;
+	width: 48%;
+	min-height: 20em;
+	border-bottom:  1px solid darkslategray;
+}
+
+.skills_container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 11pt;
+	height: 4em;
+}
+
+.skills {
+	width: 52%;
+	min-height: 20em;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
+.skills p {
+	font-size: 12pt;
+	padding: 10px 0px 5px 0px;
+	line-height: 0%
+}
+
+
+progress[value] {
+
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+   appearance: none;
+  width: 250px;
+  height: 20px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	   -webkit-linear-gradient(top, 
+	                           rgba(255, 255, 255, .25), 
+	                           rgba(0, 0, 0, .25)),
+	   -webkit-linear-gradient(left, #09c, #f44);
+
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: whiteSmoke;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+}
+
+progress::after {
+	content: attr(value);
+	position: absolute;
+	left: 300px;
+	margin-top: -38px;
+	} 
+
+
+.hr {
+  width: 80%; 
+  margin: 1em auto;
+  border-bottom: 1px solid #000;
+}	
+
+.title {
+	float:left;
+	width: 52%;
+}
+
 
 
