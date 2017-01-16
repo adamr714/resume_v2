@@ -12,6 +12,10 @@ h2 {
 	color: darkslategray;
 }
 
+.clearfix {
+	clear:both;
+}
+
 .name {
   	margin: -3.6em auto;
 	text-align: center;
@@ -27,10 +31,10 @@ main {
 	display: block;
 	position: relative;
 	width: 80%;
-	height: 100%;
 	margin-top: 2em;
 	margin-left: auto;
 	margin-right: auto;
+	padding-bottom:5em;
 	background-color: beige;
 	border: 1px solid #000;
 	box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.4);
@@ -42,7 +46,7 @@ main {
 	height: 0;
 	border-top: 100px solid darkslategray;
 	border-right: 100px solid transparent;
-/*	float: left;*/
+	float: left;
 	position: absolute;
 	top: 1em;
 	left: 1em;
@@ -149,8 +153,6 @@ ul {
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 11pt;
-	height: 4em;
-
 }
 
 .experience {
@@ -179,8 +181,7 @@ ul {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 11pt;
-	height: 4em;
+	font-size: 11pt;	
 }
 
 .skills {
