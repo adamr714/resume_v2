@@ -12,6 +12,10 @@ h2 {
 	color: darkslategray;
 }
 
+p {
+	margin: 4px;
+}
+
 .clearfix {
 	clear:both;
 }
@@ -25,6 +29,12 @@ h2 {
 	line-height: 95%;
 	text-shadow: 2px 2px #000;
 	transform: rotate(-10deg);
+}
+
+.job {
+	font-size: 14pt;
+	font-weight: bold;
+	color: #B8472A;
 }
 
 main {
@@ -159,7 +169,7 @@ ul {
 	float: left;
 	width: 48%;
 	min-height: 20em;
-	border-bottom:  1px solid darkslategray;
+	
 }
 
 .spacer {
@@ -174,7 +184,6 @@ ul {
 	float: left;
 	width: 48%;
 	min-height: 20em;
-	border-bottom:  1px solid darkslategray;
 }
 
 .skills_container {
@@ -209,23 +218,10 @@ ul {
 	width: 52%;
 }
 
-.frontend {
+.frontend, .backend, .randomSkills {
 	float: left;
-	width: 33%;
+	width: 32%;
+	
 }
-
-
-.backend {
-	float: left;
-	width: 33%;
-}
-
-.randomSkills {
-	float: left;
-	width: 33%;
-}
-
-
-
 
 

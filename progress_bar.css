@@ -1,5 +1,5 @@
 .skills_container li {
-    width: 40%;
+    width: 95%;
     /*float: left;*/
     list-style-type: none;    
     padding-right: 5.3333333%;
@@ -151,8 +151,10 @@ p[data-value]:after {
      -webkit-linear-gradient( left, #09c, #ff0);
 }
 
+.javascript::-webkit-progress-value,
+.node-js::-webkit-progress-value,
 .jquery::-webkit-progress-value,
-.node-js::-webkit-progress-value 
+
 {
     /* Gradient background with Stripes */
     background-image:
@@ -203,8 +205,11 @@ p[data-value]:after {
      -moz-linear-gradient( left, #09c, #ff0);
 }
 
-.jquery::-moz-progress-bar,
-.node-js::-moz-progress-bar {
+.javascript::-moz-progress-bar,
+.node-js::-moz-progress-bar, 
+.jquery::-moz-progress-bar 
+
+{
     /* Gradient background with Stripes */
     background-image:
     -moz-linear-gradient( 135deg,
