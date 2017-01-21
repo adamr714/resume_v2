@@ -195,7 +195,9 @@ ul {
 .skills p {
 	font-size: 12pt;
 	padding: 10px 0px 5px 0px;
-	line-height: 0%
+	line-height: 0%;
+	padding-bottom:0px;
+	margin-bottom:8px;
 }
 
 
@@ -237,10 +239,13 @@ progress[value]::-webkit-progress-bar {
 progress::after {
 	content: attr(value);
 	position: absolute;
-	left: 300px;
+	left: 232px;
 	margin-top: -38px;
-	} 
+} 
 
+progress {
+	position: relative;
+}
 
 .hr {
   width: 80%; 
